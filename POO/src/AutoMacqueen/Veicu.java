@@ -1,23 +1,22 @@
-package AutoMatt;
+package AutoMacqueen;
 
-public class Mattinho {
+import org.w3c.dom.ls.LSOutput;
+
+public class Veicu {
     private int quantidadeRodas;
     private String chassi;
     private String marca;
     private String tipo;
 
-    Mattinho(int quantidadeRodas, String chassi, String marca, String tipo){
+    Veicu(int quantidadeRodas, String chassi, String marca, String tipo){
         this.quantidadeRodas = quantidadeRodas;
         this.chassi = chassi;
         this.marca = marca;
         this.tipo = tipo;
     }
-
-    public Mattinho() {
+    public Veicu(){
 
     }
-
-
 
     public int getQuantidadeRodas() {
         return quantidadeRodas;
@@ -53,11 +52,10 @@ public class Mattinho {
 
     @Override
     public String toString() {
-        return "Mattinho: " +
+        return "Veicu: " +
                 "quantidadeRodas: " + quantidadeRodas +
                 ", chassi: " + chassi + '\'' +
                 ", marca: " + marca + '\'' +
                 ", tipo: " + tipo + '\'';
-
     }
 }
